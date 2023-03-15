@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-//projeto conculido
+//Ultima atualização: 08/03/23
 
 int main(void)
 {
@@ -18,7 +18,7 @@ int main(void)
         printf("Escolha o idioma | Choose the language\n\n");
 
         printf(" '1' : Portugues\n");
-        printf(" '2' : English\n\n");
+        printf(" '2' : English\n\n > ");
 
         scanf("%d", &code);
         system("cls || clear");
@@ -50,7 +50,7 @@ int main(void)
 
                     printf("\nDigite a expressao na forma: numero operador numero\n");
                     printf("Por exemplo: 1 + 1 , 2.1 p 3.1\n\n");
-                    printf("Para operacoes como: fatorial, seno,\ncosseno, tangente e log10. \nO segundo numero nao faz diferenca.\n\n");
+                    printf("Para operacoes como: fatorial, seno,\ncosseno, tangente e log10. \nO segundo numero nao faz diferenca.\n\n > ");
 
                     scanf("%f", &num1);
                     scanf(" %c ", &oper);
@@ -132,7 +132,7 @@ int main(void)
 
                     }
 
-                    printf("\ndeseja continuar? digite 1 para sim.\n\n");
+                    printf("\ndeseja continuar? digite 1 para sim.\n\n > ");
                     scanf("%d", &resp);
                     system("clear");
 
@@ -166,7 +166,7 @@ int main(void)
 
                     printf("\nType the operation as: number operator number\n");
                     printf("For exemple: 1 + 1 , 2.1 p 3.1\n\n");
-                    printf("For operations like: factorial, sen,\ncos, tan and log10. \nThe second number doesn't make a difference.\n\n");
+                    printf("For operations like: factorial, sen,\ncos, tan and log10. \nThe second number doesn't make a difference.\n\n > ");
 
                     scanf("%f", &num1);
                     scanf(" %c ",&oper);
@@ -250,7 +250,7 @@ int main(void)
 
                     }
 
-                    printf("\nDo you wish to continue? type 1 for yes.\n\n");
+                    printf("\nDo you wish to continue? type 1 for yes.\n\n > ");
                     scanf("%d", &resp);
                     system("clear");
 
@@ -262,14 +262,14 @@ int main(void)
 
             default:
                     printf("Escolha uma opcao valida | Choose a valid option");
-                    printf("\n\nPressione 1 para continuar | Press 1 to continue\n\n");
+                    printf("\n\nPressione 1 para continuar | Press 1 to continue\n\n > ");
                     scanf("%d", &resp);
                     system("clear");
 
         }
-        }
-        while(resp==1);
-        return 0;
+    }
+    while(resp==1);
+    return 0;
 
 }
 
