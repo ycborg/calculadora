@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <math.h>
 
-//Ultima atualização: 08/03/23
-
 int main(void) {
         float num1, num2, a;
         int resp, code, num3 = 1, fat = 1;
