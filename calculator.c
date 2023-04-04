@@ -39,7 +39,7 @@ int main(void) {
 				scanf(" %c ", &oper);
 				scanf("%f", &num2);
 
-				system("cls");
+				system("cls || clear");
 
 				switch (oper) {
 					case '+':
@@ -182,14 +182,14 @@ int main(void) {
 				}
 				printf("\nDo you wish to continue? type 1 for yes.\n\n > ");
 				scanf("%d", &resp);
-				system("clear");
+				system("cls || clear");
 			} while (resp == 1);
 			return 0;
 		} else {
 			printf("Escolha uma opcao valida | Choose a valid option");
 			printf("\n\nPressione 1 para continuar | Press 1 to continue\n\n > ");
 			scanf("%d", &resp);
-			system("clear");
+			system("cls || clear");
 		}
 	} while (resp == 1);
 	return 0;
