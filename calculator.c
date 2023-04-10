@@ -4,7 +4,7 @@
 
 int main(void) {
 	float num1, num2, a;
-	int resp, code, num3 = 1, fat = 1;
+	int resp, code;
 	char oper;
 
 	do {
@@ -42,19 +42,21 @@ int main(void) {
 
 				system("cls || clear");
 
+				int num3 = 1, fat = 1;
+
 				switch (oper) {
 					case '+':
-						printf("%.4f mais %.4f e igual a %.4f.\n\n", num1, num2, num1 + num2);
+						printf("%f mais %f e igual a %f.\n\n", num1, num2, num1 + num2);
 						break;
 					case '-':
-						printf("%.4f menos %.4f e igual a %.4f.\n\n", num1, num2, num1 - num2);
+						printf("%f menos %f e igual a %f.\n\n", num1, num2, num1 - num2);
 						break;
 					case 'x':
-						printf("%.4f vezes %.4f e igual a %.4f.\n\n", num1, num2, num1 * num2);
+						printf("%f vezes %f e igual a %f.\n\n", num1, num2, num1 * num2);
 						break;
 					case '/':
 						if (num2 != 0) {
-							printf("%.4f dividido por %.4f e igual a %.4f.\n\n", num1, num2, num1 / num2);
+							printf("%f dividido por %f e igual a %f.\n\n", num1, num2, num1 / num2);
 						}
 						else;
 						printf("Nenhum numero pode ser dividido por 0.\n\n");
@@ -66,31 +68,31 @@ int main(void) {
 						for (; fat <= num1; fat++) {
 							num3 *= fat;
 						}
-						printf("%d fatorial e igual a %d.\n\n", (int)num1, (int)num3);
+						printf("%d fatorial e igual a %d.\n\n", (int)num1, num3);
 						break;
 					case 'r':
 						a = sqrt(num1);
-						printf("a raiz quadrada de %f e igual a %.4f.\n\n", num1, a);
+						printf("a raiz quadrada de %f e igual a %f.\n\n", num1, a);
 						break;
 					case 'l':
 						a = log10(num1);
-						printf("o log10 de %d e igual a %.4f.\n\n", (int)num1, a);
+						printf("o log10 de %d e igual a %f.\n\n", (int)num1, a);
 						break;
 					case 's':
 						a = sin(num1);
-						printf("o seno de %f e igual a %.4f.\n\n", num1, a);
+						printf("o seno de %f e igual a %f.\n\n", num1, a);
 						break;
 					case 'c':
 						a = cos(num1);
-						printf("o cosseno de %f e igual a %.4f.\n\n", num1, a);
+						printf("o cosseno de %f e igual a %f.\n\n", num1, a);
 						break;
 					case 't':
 						a = tan(num1);
-						printf("a tangente de %f e igual a %.4f.\n\n", num1, a);
+						printf("a tangente de %f e igual a %f.\n\n", num1, a);
 						break;
 					case 'p':
 						a = pow(num1, num2);
-						printf("%f elevado a %f e igual a %.4f.\n\n", num1, num2, a);
+						printf("%f elevado a %f e igual a %f.\n\n", num1, num2, a);
 						break;
 					default:
 						printf("Apenas caracteres validos!\n\n");
@@ -127,19 +129,21 @@ int main(void) {
 
 				system("cls || clear");
 
+				int num3 = 1, fat = 1;
+
 				switch (oper) {
 					case '+':
-						printf("%.4f plus %.4f is equal to %.4f.\n\n", num1, num2, num1 + num2);
+						printf("%f plus %f is equal to %f.\n\n", num1, num2, num1 + num2);
 						break;
 					case '-':
-						printf("%.4f minus %.4f is equal to %.4f.\n\n", num1, num2, num1 - num2);
+						printf("%f minus %f is equal to %f.\n\n", num1, num2, num1 - num2);
 						break;
 					case 'x':
-						printf("%.4f times %.4f is equal to %.4f.\n\n", num1, num2, num1 * num2);
+						printf("%f times %f is equal to %f.\n\n", num1, num2, num1 * num2);
 						break;
 					case '/':
 						if (num2 != 0) {
-							printf("%.4f divided by %.4f is equal to %.4f.\n\n", num1, num2, num1 / num2);
+							printf("%f divided by %f is equal to %f.\n\n", num1, num2, num1 / num2);
 						}
 						else;
 						printf("No number can be divided by 0.\n\n");
@@ -151,31 +155,31 @@ int main(void) {
 						for (; fat <= num1; fat++) {
 							num3 *= fat;
 						}
-						printf("%d factorial is equal to %d.\n\n", (int)num1, (int)num3);
+						printf("%d factorial is equal to %d.\n\n", (int)num1, num3);
 						break;
 					case 'r':
 						a = sqrt(num1);
-						printf("The square root of %f is equal to %.4f.\n\n", num1, a);
+						printf("The square root of %f is equal to %f.\n\n", num1, a);
 						break;
 					case 'l':
 						a = log10(num1);
-						printf("The log10 of %d is equal to %.4f.\n\n", (int)num1, a);
+						printf("The log10 of %d is equal to %f.\n\n", (int)num1, a);
 						break;
 					case 's':
 						a = sin(num1);
-						printf("The sen of %f is equal to %.4f.\n\n", num1, a);
+						printf("The sen of %f is equal to %f.\n\n", num1, a);
 						break;
 					case 'c':
 						a = cos(num1);
-						printf("The cos of %f is equal to %.4f.\n\n", num1, a);
+						printf("The cos of %f is equal to %f.\n\n", num1, a);
 						break;
 					case 't':
 						a = tan(num1);
-						printf("The tan of %f is equal to %.4f.\n\n", num1, a);
+						printf("The tan of %f is equal to %f.\n\n", num1, a);
 						break;
 					case 'p':
 						a = pow(num1, num2);
-						printf("%f raised to the power of %f is equal to %.4f.\n\n", num1, num2, a);
+						printf("%f raised to the power of %f is equal to %f.\n\n", num1, num2, a);
 						break;
 					default:
 						printf("Only valid characters!\n\n");
