@@ -1,22 +1,19 @@
-# Calculadora em C
+# Multilingual Scientific Calculator (C)
 
-### Descrição:
-É uma calculadora com opções em inglês e português, contendo 12 operações diferentes.
+### 🎓 Context
+This project was one of my first experiences with programming in **C**. It was developed to practice fundamental concepts of the language, such as control structures, modularization with functions, and the use of the `math.h` library for scientific operations.
 
-```c
-    printf("Operacoes disponiveis:\n");
-    printf(" '+' : adicao\n");
-    printf(" '-' : subtracao\n");
-    printf(" 'x' : multiplicao\n");
-    printf(" '/' : divisao\n");
-    printf(" 'm' : mod\n");
-    printf(" 'p' : potenciacao\n");
-    printf(" 'r' : raiz quadrada\n");
-    printf(" '!' : fatorial\n");
-    printf(" 's' : seno\n");
-    printf(" 'c' : cosseno\n");
-    printf(" 't' : tangente\n");
-    printf(" 'l' : log10\n");
-```
-### Como usar?
-Primeiramente, crie o executável do código com a ajuda do 'makefile'; basta digitar no terminal 'make all'. Em seguida, digite './calculator' no terminal.
+### 🚀 Features
+* **12 Operations:** Support for addition, subtraction, multiplication, division, modulo, exponentiation, square root, factorial, sine, cosine, tangent, and log10.
+* **Multilingual Interface:** User interface available in both **English** and **Portuguese**.
+* **Input Validation:** Implementation of basic checks, such as preventing division by zero and handling invalid character inputs.
+
+### 🛠️ Technical Details
+* **Control Structures:** Extensive use of `switch-case` and `if-else` blocks to manage mathematical operations and language selection.
+* **Modularization:** The code is organized into separate functions for better maintainability and readability (`menu` for UI and `result` for logic).
+* **Memory & I/O:** Practice with standard I/O functions (`scanf`, `printf`) and buffer management.
+
+### 💻 How to run
+1. Compile the code using a C compiler (e.g., GCC):
+   ```bash
+   gcc calculator.c -o calculator -lm
