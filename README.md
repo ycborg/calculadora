@@ -17,3 +17,7 @@ This project was one of my first experiences with programming in **C**. It was d
 1. Compile the code using a C compiler (e.g., GCC):
    ```bash
    gcc calculator.c -o calculator -lm
+
+2. **Run** the executable:
+   ```bash
+   ./calculator
