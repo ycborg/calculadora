@@ -14,9 +14,9 @@ This project was one of my first experiences with programming in **C**. It was d
 * **Memory & I/O:** Practice with standard I/O functions (`scanf`, `printf`) and buffer management.
 
 ### 💻 How to run
-1. Compile the code using a C compiler (e.g., GCC):
+1. **Compile** using the provided Makefile:
    ```bash
-   gcc calculator.c -o calculator -lm
+   make all
 
 2. **Run** the executable:
    ```bash
